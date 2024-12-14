@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="fav.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav class=" bg-primary bg-gradient">
+        <div class="container d-flex justify-content-between align-items-center  ">
+         <div class="d-flex justify-content-between align-items-center ">
+          <img src="th-removebg-preview.png" width="40px" alt="">
+          <a class="navbar-brand fs-4 fs">Asad Abbas</a>
+         </div>
+        <div>
+          <form class="d-flex" role="search">
+            <a class="navbar-brand fs fs-4" id="welcomeMessage"></a>
+
+             <div class="form-check form-switch d-flex justify-content-center align-items-center">
+          <!-- Fixed the id to avoid spaces -->
+          <input class="form-check-input text-bg-dark" type="checkbox" id="flexSwitchCheckChecked">
+      </div>
+        </form>
+        </div>
+        </div>
+         
+      </nav>
+    <!-- Quiz Container -->
+    <div class="container mt-5" id="quiz-container">
+        <div class="shadow p-4 border rounded">
+            <h3 class="question-text">What does HTML stand for?</h3>
+            <div class="option shadow p-2 border rounded mb-2">
+                <input type="radio" name="option" id="option1" value="Hyper Text Markup Language">
+                <label for="option1" class="option-label">Hyper Text Markup Language</label>
+            </div>
+            <div class="option shadow p-2 border rounded mb-2">
+                <input type="radio" name="option" id="option2" value="High Text Machine Language">
+                <label for="option2" class="option-label">High Text Machine Language</label>
+            </div>
+            <div class="option shadow p-2 border rounded mb-2">
+                <input type="radio" name="option" id="option3" value="Hyperlink and Text Markup Language">
+                <label for="option3" class="option-label">Hyperlink and Text Markup Language</label>
+            </div>
+            <div class="option shadow p-2 border rounded mb-2">
+                <input type="radio" name="option" id="option4" value="Home Tool Markup Language">
+                <label for="option4" class="option-label">Home Tool Markup Language</label>
+            </div>
+            <button id="next-btn" class="btn btn-primary mt-3">Next</button>
+        </div>
+    </div>
+
+    <!-- Result Container -->
+    <div id="result-container" class="d-none text-center mt-5">
+        <h3>Quiz Completed</h3>
+        <p id="total-questions"></p>
+        <p id="correct-answers"></p>
+        <p id="percentage"></p>
+        <button onclick="location.reload();" class="btn btn-secondary mt-3">Retry Quiz</button>
+    </div>
+
+    <footer class="bg-primary bg-gradient text-white text-center py-1">
+        <p class="font-sm mSm">Made by Asad Abbas <i class="fas fa-signature"></i></p>
+      </footer>
+
+    <script src="scriptREACT.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
